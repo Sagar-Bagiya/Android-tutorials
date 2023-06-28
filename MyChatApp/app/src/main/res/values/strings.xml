@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MyChatApp</string>
+    <string name="title_activity_authentication">AuthenticationActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+
+    <string name="get_closer_">Get Closer To</string>
+
+    <string name="everyone">EveryOne</string>
+
+    <string name="helps_you_t">Helps you to contact everyone with just easy way</string>
+
+    <string name="hello_welco">Hello, Welcome Back</string>
+
+    <string name="happy_to_se">Happy to see you again, to use your account please login first.</string>
+
+</resources>

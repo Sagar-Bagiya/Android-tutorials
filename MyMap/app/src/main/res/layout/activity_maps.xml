@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MapsActivity">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map"
+        android:layout_below="@id/mySearchCard"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout="@android:layout/test_list_item" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextViewSearchHear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/placeautocomplite_bg"
+        android:drawablePadding="10dp"
+        android:elevation="1dp"
+        android:gravity="center"
+        android:hint="Source"
+        android:minHeight="48dp"
+        android:padding="5dp" >
+
+    </AutoCompleteTextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:id="@+id/mySearchCard"
+        android:padding="4dp"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_margin="4dp"
+            android:elevation="10dp"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:hint="Source"
+            android:background="@drawable/placeautocomplite_bg"
+            android:id="@+id/autoCompleteTextViewPlaceSource"
+            android:gravity="center"
+            />
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:layout_margin="4dp"
+            android:layout_below="@+id/autoCompleteTextViewPlaceSource"
+            android:elevation="10dp"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:hint=" .... destination .... "
+            android:background="@drawable/placeautocomplite_bg"
+            android:id="@+id/autoCompleteTextViewPlaceDestination"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/goBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/baseline_assistant_direction_24"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_button"
+        android:drawableTop="@drawable/baseline_assistant_direction_24"
+        android:drawablePadding="5dp"
+        android:backgroundTint="@color/white"
+        android:text="Go"
+        android:textColor="#ffffff"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:id="@+id/myDistance"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnDrawPath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/goBtn"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/white"
+        android:padding="7dp"
+        android:src="@drawable/baseline_arrow_circle_up_24" />
+
+</RelativeLayout>

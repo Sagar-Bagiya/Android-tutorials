@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DemoMap</string>
+    <string name="title_activity_map">MapActivity</string>
+
+
+    <string name="google_map_api_key">
+        AIzaSyDiZj2nPVy-abSXPB63aT1QVFk5BAFAQgM
+    </string>
+
+</resources>

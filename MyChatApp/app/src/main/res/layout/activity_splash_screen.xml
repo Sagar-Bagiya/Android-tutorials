@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+
+    <TextView
+        android:id="@+id/get_closer_"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="top"
+        android:textColor="#785353"
+        android:text="@string/get_closer_"
+        android:textAppearance="@style/get_closer_"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/everyone"
+        android:layout_width="174dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="4dp"
+        android:gravity="top"
+        android:textColor="#785353"
+
+        android:text="@string/everyone"
+        android:fontFamily="sans-serif-thin"
+        android:textAppearance="@style/everyone"
+        app:layout_constraintStart_toStartOf="@+id/get_closer_"
+        app:layout_constraintTop_toBottomOf="@+id/get_closer_" />
+
+    <TextView
+        android:id="@+id/helps_you_t"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="top"
+        android:textColor="#3C09D6"
+        android:text="@string/helps_you_t"
+        android:textAppearance="@style/helps_you_t"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/everyone" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/splace_bg_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/helps_you_t" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let's Start"
+        android:textStyle="italic"
+        android:textColor="#8E7C7C"
+        android:textAppearance="@style/everyone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
