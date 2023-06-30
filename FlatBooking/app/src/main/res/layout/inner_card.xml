@@ -5,41 +5,47 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
-    android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
         android:layout_height="wrap_content">
 
         <com.google.android.material.checkbox.MaterialCheckBox
-            android:id="@+id/checkBox"
-            android:layout_width="30dp"
-            android:visibility="gone"
-            android:layout_height="match_parent" />
+            android:id="@+id/cbInnerCard"
+            android:layout_width="wrap_content"
+            android:layout_gravity="start"
+            android:paddingHorizontal="5dp"
+            android:visibility="visible"
+            android:layout_height="wrap_content" />
 
         <RadioButton
-            android:layout_width="30dp"
-            android:visibility="visible"
-            android:layout_height="wrap_content"/>
+            android:id="@+id/rbInnerCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:paddingHorizontal="5dp"
+            android:visibility="gone" />
 
     </FrameLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:id="@+id/tvText"
-        android:layout_marginHorizontal="5dp"
-        android:text="i don't want any .shdchgcc"
-       />
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:id="@+id/tvText"-->
+<!--        android:layout_marginHorizontal="5dp"-->
+<!--        android:text="i don't want any .shdchgcc"-->
+<!--       />-->
 
     <TextView
+        android:id="@+id/tvPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
+        android:layout_gravity="center"
         android:text="$ 300"/>
 
 </LinearLayout>

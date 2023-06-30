@@ -14,6 +14,11 @@ public class Specification {
     private boolean is_required;
     private boolean isParentAssociate;
 
+    private String modifierId;
+
+    private String modifierGroupId,modifierGroupName,modifierName,isAssociated,user_can_add_specification_quantity;
+
+
     public String get_id() {
         return _id;
     }
@@ -92,5 +97,61 @@ public class Specification {
 
     public void setIsParentAssociate(boolean isParentAssociate) {
         this.isParentAssociate = isParentAssociate;
+    }
+
+    public boolean isParentAssociate() {
+        return isParentAssociate;
+    }
+
+    public void setParentAssociate(boolean parentAssociate) {
+        isParentAssociate = parentAssociate;
+    }
+
+    public String getModifierId() {
+        return modifierId;
+    }
+
+    public void setModifierId(String modifierId) {
+        this.modifierId = modifierId;
+    }
+
+    public String getModifierGroupId() {
+        return modifierGroupId;
+    }
+
+    public void setModifierGroupId(String modifierGroupId) {
+        this.modifierGroupId = modifierGroupId;
+    }
+
+    public String getModifierGroupName() {
+        return modifierGroupName;
+    }
+
+    public void setModifierGroupName(String modifierGroupName) {
+        this.modifierGroupName = modifierGroupName;
+    }
+
+    public String getModifierName() {
+        return modifierName;
+    }
+
+    public void setModifierName(String modifierName) {
+        this.modifierName = modifierName;
+    }
+
+    public String getIsAssociated() {
+        return isAssociated;
+    }
+
+    public void setIsAssociated(String isAssociated) {
+        this.isAssociated = isAssociated;
+    }
+
+    public String getUser_can_add_specification_quantity() {
+        return user_can_add_specification_quantity;
+    }
+
+    public void setUser_can_add_specification_quantity(String user_can_add_specification_quantity) {
+        this.user_can_add_specification_quantity = user_can_add_specification_quantity;
     }
 }

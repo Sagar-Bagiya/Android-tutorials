@@ -9,7 +9,10 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class ApiData {
-
+    public static Item jsonData;
+    public ApiData(Context context) {
+        jsonData = getJsonData(context);
+    }
     public static Item getJsonData(Context context) {
         try {
             InputStream inputStream = context.getAssets().open("JsonData.json");

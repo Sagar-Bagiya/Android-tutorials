@@ -12,7 +12,6 @@ import com.example.flatbooking.models.Item;
 
 public class MakePackageActivity extends AppCompatActivity {
     Item myData;
-
     ActivityMakePackageBinding binding;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +23,5 @@ public class MakePackageActivity extends AppCompatActivity {
 
         binding.myRecyclerView.setAdapter(new SpecificationAdpter(this,myData.getSpecifications()));
         binding.myRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-
     }
 }
