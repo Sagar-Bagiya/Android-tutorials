@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Set the background color of the square box -->
+    <corners android:radius="0dp" /> <!-- Set the corner radius to 0dp to make it square -->
+    <stroke
+        android:width="0.3dp"
+        android:color="#A39C9C" /> <!-- Set the border color -->
+</shape>

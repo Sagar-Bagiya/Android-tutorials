@@ -1,0 +1,19 @@
+<!-- layered_drawable.xml -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+    <!-- Background image -->
+    <item
+        android:top="1dp" android:right="4dp"
+        android:drawable="@drawable/discount_icon" />
+
+    <!-- Overlay image -->
+    <item
+        android:drawable="@drawable/cheack2"
+        android:gravity="top"
+        android:left="16dp"
+         />
+
+</layer-list>
